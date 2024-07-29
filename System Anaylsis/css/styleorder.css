@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #F05941;
+  color: white;
+}
+
+.container {
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.steps {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.step {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border: 2px solid #ACACA6;
+  border-radius: 50%;
+  transition: background 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.step.selected {
+  border: 3px solid #4B81BD;   
+}
+
+.step.completed {
+  border: 3px solid #4B81BD;
+  background: #4B81BD; 
+}
+
+.progress {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 10px;
+  border-bottom: 2px solid #ACACA6;
+  z-index: -1;
+}
+
+.percent {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  border-bottom: 2px solid #4B81BD;
+  z-index: 1;
+  transition: width 1s;
+}
+
+.description {
+  position: absolute;
+  font-weight: bolder;
+  top: 60px;
+  width: 100px;
+  text-align: center;
+  font-size: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.detail {
+  padding: 20px;
+}
+
+.detail h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.order-detail {
+  display: flex;
+  align-items: center;
+}
+
+.img-detail {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.product-info {
+  flex-grow: 1;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.address, .pay-detail {
+  padding: 20px;
+  background: #f9f9f9;
+  margin: 20px 0;
+}
+
+.address h4, .pay-detail h4 {
+  margin-bottom: 10px;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  background: #fff;
+}
+
+.butt-order {
+  padding: 10px 20px;
+  background-color: #F05941;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: larger;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .steps {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .progress {
+    width: 100%;
+  }
+
+  .step {
+    width: 40px;
+    height: 40px;
+  }
+
+  .description {
+    font-size: 10px;
+    top: 50px;
+  }
+
+  .detail, .address, .pay-detail, .footer {
+    padding: 10px;
+  }
+
+  .img-detail {
+    width: 100px;
+  }
+
+  .product-info p, .price-item p {
+    font-size: 14px;
+  }
+
+  .butt-order {
+    padding: 10px 15px;
+    font-size: medium;
+  }
+}

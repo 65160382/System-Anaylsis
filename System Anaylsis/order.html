@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order payment</title>
+    <link rel="stylesheet" href="/System Anaylsis/css/style.css">
+    <link rel="stylesheet" href="/System Anaylsis/css/styleorder.css">
+</head>
+<body>
+  <div class="navbar-brand">
+    <h1>SecondHandMarket</h1>
+    <div class="main-content" id="main">
+        <button class="open-btn" onclick="openNav()">☰</button>
+    </div>
+</div>
+
+<div class="sidebar" id="mySidebar">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+    <a href="/System Anaylsis/index.html">Home</a>
+    <a href="/System Anaylsis/Login.html">Login</a>
+    <a href="/System Anaylsis/detail.html">Add Chart</a>
+</div>
+    <div class="container">
+        <div class="progress-bar-container">
+            <div class="progress">
+              <div class="percent"></div>
+            </div>
+            <div class="steps">
+              <div class="step" id="0">
+                <div class="description">Shipping Info</div>
+              </div>
+              <div class="step" id="1">
+                <div class="description">Review & Pay</div>
+              </div>
+              <div class="step" id="2">
+                <div class="description">Complete</div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="detail">
+      <h2>Shoes.Store.BKK</h2>
+      <div class="order-detail">
+        <img class="img-detail" src="/System Anaylsis/img/dis_6.png" alt="Product Image">
+        <div class="product-info">
+            <p>Sport Shoes รองเท้าผู้ชาย</p> 
+            <p>Variation: White, Size 42</p>
+            <p class="price">Price: ฿1300</p>
+        </div>
+      </div>
+      <p>Order Total (1 Item): ฿1300</p>
+    </div>
+    <div class="address">
+      <h4>Delivery Address</h4>
+      <p>Phumrapee Piya (+66) 92 920 4391</p>
+      <p>8/3 Rayong 21160</p>
+    </div>
+    <div class="pay-detail">
+      <h4>Payment Details</h4>
+      <div class="price-item">
+        <p>Merchandise Subtotal </p>
+        <p>฿1300</p>
+      </div>
+      <div class="price-item">
+        <p>Shipping Subtotal </p>
+        <p>฿0</p>
+      </div>
+      <h3>Total Payment</h3>
+      <h3>฿1300</h3>
+    </div>
+    <div class="footer">
+      <h2>Total Payment</h2>
+      <h2>฿1300</h2>
+      <button class="butt-order" onclick="window.location.href='card.html'">Place Order</button>
+    </div>
+    <script src="/System Anaylsis/js/script_or.js"></script>
+    <script src="/System Anaylsis/js/script.js"></script>   
+</body>
+</html>

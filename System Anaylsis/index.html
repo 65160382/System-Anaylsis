@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+    <link rel="stylesheet" href="/System Anaylsis/css/style.css">
+    
+</head>
+<body>
+    <div class="navbar-brand">
+        <h1>SecondHandMarket</h1>
+        <div class="main-content" id="main">
+            <button class="open-btn" onclick="openNav()">☰</button>
+        </div>
+    </div>
+
+    <div class="sidebar" id="mySidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <a href="/System Anaylsis/index.html">Home</a>
+        <a href="/System Anaylsis/Login.html">Login</a>
+        <a href="/System Anaylsis/detail.html">Add Chart</a>
+    </div>
+    
+    <div class="Search">
+        <input class="Search-bar" id="search-bar" type="text" placeholder="Search">
+        <button class="Search-butt" id="search-button">Search</button>
+    </div>
+
+    <div class="Category-Content">
+        <h2>Category</h2>
+        <div class="categories">
+            <div class="category-item">
+                <img class="img-Cate" src="img/1.png" width="90" height="100">
+                <span class="text">Beauty & Personal Care</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/2.jpg" width="90" height="100">
+                <span class="text">Men Clothes</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/3.png" width="90" height="100">
+                <span class="text">Bags</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/4.png" width="90" height="100">
+                <span class="text">Women Shoes</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/5.png" width="90" height="100">
+                <span class="text">Watches & Glasses</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/6.png" width="90" height="100">
+                <span class="text">Cameras</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/7.png" width="90" height="100">
+                <span class="text">Men Shoes</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/8.jpg" width="90" height="100">
+                <span class="text">Women Clothes</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/9.png" width="90" height="100">
+                <span class="text">Mobile & Tablets</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/10.png" width="90" height="100">
+                <span class="text">Computer & Laptops</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/11.jpg" width="90" height="100">
+                <span class="text">Sport & Beverages </span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/12.png" width="90" height="100">
+                <span class="text">Pet</span>
+            </div>
+        </div>
+
+        <h2>Daily Discover</h2>
+        <div id="daily-discover-container" class="Daily-Discover">
+            <div class="Discover-item">
+                <img class="img-Dis" src="/System Anaylsis/img/dis_1.jpg" width="320" height="330" onclick="window.location.href='detail.html'">
+                <span class="text">กระเป๋าผ้า</span>
+            </div>
+            <div class="Discover-item">
+                <img class="img-Dis" src="/System Anaylsis/img/dis_2.png" width="320" height="330" onclick="window.location.href='detail.html'">
+                <span class="text">กระเป๋าผ้า</span>
+            </div>
+            <div class="Discover-item">
+                <img class="img-Dis" src="/System Anaylsis/img/dis_3.png" width="320" height="330" onclick="window.location.href='detail.html'">
+                <span class="text">เสื้อผ้าผู้หญิง</span>
+            </div>
+            <div class="Discover-item">
+                <img class="img-Dis" src="/System Anaylsis/img/dis_4.png" width="320" height="330" onclick="window.location.href='detail.html'">
+                <span class="text">เสื้อผ้าผู้ชาย</span>
+            </div>
+            <div class="Discover-item">
+                <img class="img-Dis" src="/System Anaylsis/img/dis_5.png" width="320" height="330" onclick="window.location.href='detail.html'">
+                <span class="text">เสื้อผ้าผู้ชาย</span>
+            </div>
+            <div class="Discover-item">
+                <img class="img-Dis" src="/System Anaylsis/img/dis_6.png" width="320" height="330" onclick="window.location.href='detail.html'">
+                <span class="text">รองเท้าผู้ชาย</span>
+            </div>
+            <div class="Discover-item">
+                <img class="img-Dis" src="/System Anaylsis/img/dis_7.png" width="320" height="330" onclick="window.location.href='detail.html'">
+                <span class="text">เสื้อผ้าผู้หญิง</span>
+            </div>
+            <div class="Discover-item">
+                <img class="img-Dis" src="/System Anaylsis/img/dis_8.png" width="320" height="330" onclick="window.location.href='detail.html'">
+                <span class="text">iphone 14 Promax</span>
+            </div>
+        </div>
+        <div id="search-results" class="Daily-Discover"></div>
+    </div>
+    <script src="/System Anaylsis/js/script.js"></script>   
+</body>
+</html>
+

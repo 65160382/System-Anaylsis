@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preview Product</title>
+    <link rel="stylesheet" href="/System Anaylsis/css/style.css" />
+    <link rel="stylesheet" href="/System Anaylsis/css/style2.css" />
+  </head>
+  <body>
+    <body>
+        <div class="navbar-brand">
+          <h1>SecondHandMarket</h1>
+          <div class="main-content" id="main">
+            <button class="open-btn" onclick="openNav()">☰</button>
+          </div>
+        </div>
+        <div class="sidebar" id="mySidebar">
+          <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+          <a href="/System Anaylsis/index.html">Home</a>
+          <a href="/System Anaylsis/Login.html">Login</a>
+          <a href="/System Anaylsis/detail.html">Add Chart</a>
+        </div>
+    
+        <div class="product-container">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="/System Anaylsis/img/dis_6.png" style="width: 100%" />
+            </div>
+    
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="/System Anaylsis/img/preview_1.png" style="width: 100%" />
+            </div>
+    
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="/System Anaylsis/img/preview_2.jpg" style="width: 100%" />
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+            <!-- จุดบ่งชี้ที่อยู่กลางสไลด์โชว์ -->
+            <div class="dot-container">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
+    
+          <div class="product-detail">
+            <h2>Nike Air Jordan 1 Retro Low OG Travis Scott Olive</h2>
+            <p>฿ 1300</p>
+            <p>รายละเอียดสินค้า</p>
+            <p2>แบรนด์ Jordan SKU DZ4137-106 </br>
+                สี SAIL/UNIVERSITY RED/BLACK/MEDIUM OLIVE
+                วันที่วางจำหน่าย 26/04/2023
+            </p>
+            <button class="butt-addChart" onclick="window.location.href=''">Add To Cart</button>
+            <button class="butt-Buy" onclick="window.location.href='order.html'">Buy Now</button>
+          </div>
+        </div>
+
+    <script src="/System Anaylsis/js/script.js"></script>
+    <script src="/System Anaylsis/js/detail.js"></script>
+  </body>
+</html>
