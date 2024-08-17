@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Success</title>
     <link rel="stylesheet" href="/css/payment-success.css">
+    <link rel="icon" href="/img/bag.png" type="image/png"> 
 </head>
 <body>
     <div class="shop-info">
@@ -26,27 +27,27 @@
             <h2>สั่งซื้อเรียบร้อย</h2>
             <p>รหัสรายการสั่งซื้อของคุณคือ: <span id="order-number"></span></p>
             <div class="order-details">
-                <p>รหัสรายการสั่งซื้อที่คือ #523219</p>
+                <p>รหัสรายการสั่งซื้อที่คือ <span id="order-id"></span></p>
                 <div class="payment-info">
                     <div>
                         <i class="fas fa-calendar-alt"></i>
                         <img src="/img/hand-holding-usd.png" alt="Logo" class="logo">
-                        <p>ชำระค่าสินค้า และแจ้งชำระเงินภายใน<br><b style="color: blue;">1 ส.ค. 2567</b></p>
+                        <p>ชำระค่าสินค้า และแจ้งชำระเงินภายใน<br><b style="color: blue;"></b></p>
                     </div>
                     <div>
                         <i class="fas fa-money-bill-wave"></i>
                         <img src="/img/usd-circle_2.png" alt="Logo" class="logo">
-                        <p>จำนวนเงินที่ต้องชำระ<br><b style="color: orange ;">1300 บาท</b></p>
+                        <p>จำนวนเงินที่ต้องชำระ<br><b style="color: orange;" id="payment-amount"></b></p>
                     </div>
                     <div>
                         <i class="fas fa-clock"></i>
                         <img src="/img/sack-dollar_1.png" alt="Logo" class="logo">
-                        <p>สถานะรายการสั่งซื้อ<br><b style="color: #4CAF50;">ชำระเงินสำเร็จ</b></p>
+                        <p>สถานะรายการสั่งซื้อ<br><b style="color: #4CAF50;" id="order-status"></b></p>
                     </div>
                 </div>
             </div>
-            <p>ระบบจะส่งอีเมลแจ้งเตือนอัตโนมัติไปยัง imitar47@gmail.com เมื่อสถานะการสั่งซื้อสินค้าเปลี่ยนแปลง</p>
-            <a href="/index.html">กลับไปหน้าหลัก</a>
+            <p>ระบบจะส่งอีเมลแจ้งเตือนอัตโนมัติไปยัง <span id="customer-email"></span> เมื่อสถานะการสั่งซื้อสินค้าเปลี่ยนแปลง</p>
+            <a href="/index.html">กลับไปยังหน้าหลัก</a>
         </div>
     </div>
     <script src="/js/payment-success.js"></script>

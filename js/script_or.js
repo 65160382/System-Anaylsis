@@ -102,12 +102,11 @@ function setupOrderButton(productId, quantity, price) {
         return updateProductStock(productId, quantity);
       })
       .then((stockResult) => {
-        alert("สั่งซื้อสำเร็จ!");
+        window.location.href = 'payment-success.html';
       })
       .catch((error) => console.error("Error:", error));
   });
 }
-
 
 function fetchAddressDetails() {
   const customerId = localStorage.getItem("Customer_id");
