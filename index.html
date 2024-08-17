@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecondHandMarket</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    <div class="navbar-brand">
+        <div class="title-container">
+            <h1 onclick="window.location.href='index.html'">SecondHandMarket</h1>
+            <img src="/img/shopping-cart.png" width="52" height="50">
+        </div>
+        <div class="main-content" id="main">
+            <button class="open-btn" onclick="openNav()">☰</button>
+            <div class="profile-container">
+                <img src="/img/profile.png" width="40" height="40" id="profile-icon">
+                <span id="username-display"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar" id="mySidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <a href="/index.html">Home</a>
+        <a href="/logins.html">Login</a>
+        <a href="/Insert.html">Add Products</a>
+    </div>
+    
+    <div class="Search">
+        <input class="Search-bar" id="search-bar" type="text" placeholder="Search">
+        <button class="Search-butt" id="search-button" onclick="searchProducts()">Search</button>
+    </div>
+
+    <div class="Category-Content">
+        <h2 class="text-Cate">Category</h2>
+        <div class="categories">
+            <div class="category-item">
+                <img class="img-Cate" src="img/1.png" width="90" height="100">
+                <span class="text">Beauty & Personal Care</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/2.jpg" width="90" height="100">
+                <span class="text">Men Clothes</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/3.png" width="90" height="100">
+                <span class="text">Bags</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/4.png" width="90" height="100">
+                <span class="text">Women Shoes</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/5.png" width="90" height="100">
+                <span class="text">Watches & Glasses</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/6.png" width="90" height="100">
+                <span class="text">Cameras</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/7.png" width="90" height="100">
+                <span class="text">Men Shoes</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/8.jpg" width="90" height="100">
+                <span class="text">Women Clothes</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/9.png" width="90" height="100">
+                <span class="text">Mobile & Tablets</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/10.png" width="90" height="100">
+                <span class="text">Computer & Laptops</span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/11.jpg" width="90" height="100">
+                <span class="text">Sport & Beverages </span>
+            </div>
+            <div class="category-item">
+                <img class="img-Cate" src="img/12.png" width="90" height="100">
+                <span class="text">Pet</span>               
+            </div>
+        </div>
+
+        <div id="search-results" class="Daily-Discover">
+            <h2>Daily Discover</h2>
+        </div>
+
+        <div id="daily-discover-container" class="Daily-Discover"></div>
+        <div id="product-detail-container"></div>
+        
+    </div>
+    <script src="/js/script.js"></script>   
+</body>
+</html>
+

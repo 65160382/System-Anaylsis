@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.payment-success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.payment-success-box {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+.logo {
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.logo2 {
+    width: 160px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.order-id {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.order-details p {
+    font-size: 16px;
+    color: #555;
+}
+
+.payment-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.payment-info div {
+    width: 30%;
+    text-align: center;
+}
+
+.payment-info i {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.payment-info p {
+    font-size: 14px;
+    color: #555;
+}
+
+.payment-info b {
+    color: #000;
+}
+
+.payment-success-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* เส้นกับวงกลม */
+.progress-bar {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.step.completed {
+    background-color: #4caf50;
+    color: white;
+}
+
+.step.active {
+    background-color: #ffc107;
+    color: white;
+}
+
+/* ข้างบน */
+.header-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.shop-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: 40px auto;
+}
+
+.shop-details h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.shop-details p {
+    margin: 5px 0 0 0;
+    color: #666;
+}
+
+.shop-status {
+    color: green;
+}

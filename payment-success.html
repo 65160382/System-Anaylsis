@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+    <link rel="stylesheet" href="/css/payment-success.css">
+</head>
+<body>
+    <div class="shop-info">
+        <img src="/img/logo.png" alt="KasetExpress Logo" class="logo2">
+        <div class="shop-details">
+            <h1>SecondHandMarket</h1>
+            <p>SHOP ID: 523219 <span class="shop-status">(ร้านเปิดแล้ว)</span></p>
+        </div>
+    </div>
+    <div class="progress-bar">
+        <div class="step completed">ตรวจสินค้า</div>
+        <div class="step completed">ที่อยู่ในการจัดส่ง</div>
+        <div class="step completed">ตรวจสอบรายการสั่งซื้อ</div>
+        <div class="step active">สั่งซื้อเรียบร้อย</div>
+    </div>
+    <div class="payment-success-container">
+        <div class="payment-success-box">
+            <img src="/img/check.png" alt="Logo" class="logo">
+            <h2>สั่งซื้อเรียบร้อย</h2>
+            <p>รหัสรายการสั่งซื้อของคุณคือ: <span id="order-number"></span></p>
+            <div class="order-details">
+                <p>รหัสรายการสั่งซื้อที่คือ #523219</p>
+                <div class="payment-info">
+                    <div>
+                        <i class="fas fa-calendar-alt"></i>
+                        <img src="/img/hand-holding-usd.png" alt="Logo" class="logo">
+                        <p>ชำระค่าสินค้า และแจ้งชำระเงินภายใน<br><b style="color: blue;">1 ส.ค. 2567</b></p>
+                    </div>
+                    <div>
+                        <i class="fas fa-money-bill-wave"></i>
+                        <img src="/img/usd-circle_2.png" alt="Logo" class="logo">
+                        <p>จำนวนเงินที่ต้องชำระ<br><b style="color: orange ;">1300 บาท</b></p>
+                    </div>
+                    <div>
+                        <i class="fas fa-clock"></i>
+                        <img src="/img/sack-dollar_1.png" alt="Logo" class="logo">
+                        <p>สถานะรายการสั่งซื้อ<br><b style="color: #4CAF50;">ชำระเงินสำเร็จ</b></p>
+                    </div>
+                </div>
+            </div>
+            <p>ระบบจะส่งอีเมลแจ้งเตือนอัตโนมัติไปยัง imitar47@gmail.com เมื่อสถานะการสั่งซื้อสินค้าเปลี่ยนแปลง</p>
+            <a href="/index.html">กลับไปหน้าหลัก</a>
+        </div>
+    </div>
+    <script src="/js/payment-success.js"></script>
+</body>
+</html>

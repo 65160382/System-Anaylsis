@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/css/card.css">
+    <script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>วิธีการชำระเงิน</h2>
+            <hr>
+            <div class="methods">
+                <div onclick="doFun()" id="tColorA" style="color: rgb(38, 24, 238);"><i class="fas fa-credit-card" style="color: rgb(38, 24, 238);"></i> Payment by card</div>
+                <div onclick="doFunA()" id="tColorB"><i class="fas fa-building-columns"></i> Mobile banks</div>
+                <div onclick="doFunB()" id="tColorC"><i class="fas fa-wallet"></i> Apple/Google pay</div>
+                <hr>
+            </div>
+        </div>
+        <div class="center">
+            <a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos" title="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-5.png" width="518" height="59" border="0" /></a>
+            <hr>
+            <div class="card-details">
+                <form onsubmit="processPayment(event)">
+                    <p>Card number</p>
+                    <div class="c-number" id="c-number">
+                        <input id="number" class="cc-number" placeholder="Card number" maxlength="19" >
+                        <i class="fas fa-credit-card" style="margin: 0;"></i>
+                    </div>
+                    <div class="c-details">
+                        <div>
+                            <p>Expiry date</p>
+                            <input id="e-date" class="cc-exp" placeholder="MM/YY"  maxlength="5">
+                        </div>
+                        <div>
+                            <p>CVV</p>
+                            <div class="cvv-box" id="cvv-box">
+                                <input id="cvv" class="cc-cvv" placeholder="CVV"  maxlength="3">
+                                <i class="fas fa-question-circle" title="3 digits on the back of the card" style="cursor: pointer;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <p>Email</p>
+                        <input type="email" placeholder="example@email.com" id="email" >
+                    </div>
+                    <button type="submit">PAY NOW</button>
+                </form>
+            </div>
+        </div>
+        <div class="right">
+            <h2>ข้อมูลการสั่งซื้อ</h2>
+            <hr>
+            <div class="details">
+                <div style="font-weight: bold; padding: 3px 0;">รายละเอียดการสั่งซื้อ</div>
+                <img class="ss" src="/img/dis_6.png" alt="Air Jordan 1 Retro Low OG Travis Scott Olive">
+                <div style="padding: 3px 0;">
+                    <p>ชื่อสินค้า: Nike Air Jordan 1 Retro Low OG Travis Scott Olive</p>
+                    <p>จำนวน: 1 ชิ้น</p>
+                    <p>ราคา: 1300 บาท</p>
+                    <p>สี: ขาวดำน้ำตาล</p>
+                    <p>ขนาดไซส์: 42</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <script src="/js/card.js"></script>
+</body>
+</html>

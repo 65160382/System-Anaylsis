@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order payment</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/styleorder.css" />
+  </head>
+  <body>
+    <div class="navbar-brand">
+      <div class="title-container">
+        <h1 onclick="window.location.href='index.html'">SecondHandMarket</h1>
+        <img src="/img/shopping-cart.png" width="52" height="50" />
+      </div>
+      <div class="main-content" id="main">
+        <button class="open-btn" onclick="openNav()">☰</button>
+      </div>
+    </div>
+
+    <div class="sidebar" id="mySidebar">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+      <a href="/index.html">Home</a>
+      <a href="/logins.html">Login</a>
+      <a href="/Insert.html">Add Products</a>
+  </div>
+
+    <div class="head">
+      <div class="head-content">
+        <button class="back-btn" onclick="history.back()">←</button>
+        <h1>รายละเอียดคำสั่งซื้อ</h1>
+      </div>
+    </div>
+    <div id="order-detail-container"></div>
+    <div id="order-detail-address">
+      <h1 class="head-add"><img src="/img/pin.png" alt="Pin Icon" width="20" height="20" />ที่อยู่สำหรับจัดส่ง</h1>
+      <div id="user-info"></div>
+    </div>
+    <diV id="order-detail-payment" class="order-payment"></diV>
+    <div id="order-detail-summary" class="order-summary"></div>
+
+
+    <script src="/js/script_or.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
